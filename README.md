@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# 🗺️ Loco App  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Loco App is a React Native application that utilizes **React Native Maps** to display maps and allow users to create, edit, and manage markers. The app also saves markers using **Async Storage** so that they persist even after restarting. It features a splash screen and uses **Expo Location** to fetch the user's current location.
 
-## Get started
+## 🚀 Features  
 
-1. Install dependencies
+### 🌍 Map Functionality  
+- **Current Location:** The app requests location permissions and displays the user's current location using the **Expo Location** library.  
+- **Markers:** Users can create custom markers at points of interest.  
+- **Marker Callout:** Each marker displays its latitude and longitude when tapped.  
+- **Marker Info:** Provides additional information about a marker with options to **Save, Edit, or Delete** the marker.  
+- **Marker Modal:** A modal appears when adding a new marker, prompting the user to enter a title.  
 
-   ```bash
-   npm install
-   ```
+### 🔄 Data Persistence  
+- **Async Storage:** Markers are stored using **React Native Async Storage**, ensuring that they remain even after the app is closed and reopened.  
 
-2. Start the app
+### 🎨 UI Components  
+- **Splash Screen:** A custom splash screen appears on app launch.  
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📌 Components  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 1️⃣ `MapComponent`  
+- This component renders the map and integrates all the child components.  
+- It manages state and passes required props to child components.  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 2️⃣ `Map` (Parent Component)  
+- Imports and renders all child components.  
+- Declares key functions like handling user location, marker creation, and data storage.  
 
-## Get a fresh project
+### 3️⃣ `MarkerCallout`  
+- Displays the latitude and longitude of a marker when tapped.  
 
-When you're ready, run:
+### 4️⃣ `MarkerInfo`  
+- Shows detailed information about a marker.  
+- Provides options to **Save, Edit, and Delete** a marker.  
 
-```bash
-npm run reset-project
-```
+### 5️⃣ `MarkerModal`  
+- A modal that appears when creating a new marker.  
+- Requires users to enter a marker title before saving.  
+- Displays "Please enter a title" if no title is provided.  
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Tech Stack  
+- **React Native**  
+- **Expo**  
+- **React Native Maps**  
+- **Expo Location** (for fetching current location)  
+- **React Native Async Storage** (for persistent data storage)  
 
-To learn more about developing your project with Expo, look at the following resources:
+---
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📦 Installation  
 
-## Join the community
+Follow these steps to run the project locally:  
 
-Join our community of developers creating universal apps.
+```sh
+git clone https://github.com/your-username/loco-app.git
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+cd loco-app
+
+npm install
+
+npm start
