@@ -1,5 +1,7 @@
 # 🗺️ Loco App  
 
+https://github.com/user-attachments/assets/b830a730-214d-4409-bfee-e9aed1c484e6
+
 Loco App is a React Native application that utilizes **React Native Maps** to display maps and allow users to create, edit, and manage markers. The app also saves markers using **Async Storage** so that they persist even after restarting. It features a splash screen and uses **Expo Location** to fetch the user's current location.
 
 ## 🚀 Features  
@@ -64,7 +66,7 @@ git clone https://github.com/your-username/loco-app.git
 cd loco-app
 
 
-https://github.com/user-attachments/assets/b830a730-214d-4409-bfee-e9aed1c484e6
+
 
 
 npm install
